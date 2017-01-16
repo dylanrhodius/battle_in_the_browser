@@ -18,5 +18,6 @@ get '/hey' do
 end
 
 get '/cat' do
-"<img src='http://bit.ly/1eze8aE' alt='Smiley face' style='border:5px dashed red'>"
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
